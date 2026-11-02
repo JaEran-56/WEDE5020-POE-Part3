@@ -1,0 +1,145 @@
+/*CSS reset
+CSS statement = 
+selector{
+    property:value;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: pink;
+}
+h1 {
+    padding: 20px;
+}
+
+h2{
+    padding: 20px;
+}
+
+navigation ul{
+    background-color: darkmagenta;
+    display: flex;
+    list-style-type: none;
+    padding: 10px
+}
+
+navigation ul li a{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+navigation ul li a:hover{
+    background-color: white;
+    color:rgba(34, 70, 125, 0.877);
+    border-radius: 35px;
+}
+
+.responsive-image{
+    max-width: auto;
+    height: auto;
+}
+
+.maps{
+    max-width: 75%;
+    margin: 15px;
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: beige;
+    }
+
+    .container{
+        grid-template-columns: auto auto;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        background-color: beige;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    navigation ul{
+        flex-direction: column;
+    }
+
+    navigation ul li a{
+        display: block;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 9px
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body{
+        background-color: beige;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    navigation ul{
+        flex-direction: column;
+    }
+
+    navigation ul li a{
+        display: block;
+    }
+    h1{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 10px;
+    }
+    p{
+        font-size: 5px
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div{
+background-color: rgba(160, 34, 133, 0.877);
+margin: 5px;
+padding: 15px;
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border-radius: 15px;
+}
+
+body{
+    background-color: lightpink;
+}
